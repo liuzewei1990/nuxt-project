@@ -1,0 +1,21 @@
+
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pad-10{
+  padding: 10px;
+}
+
+.m-top-10{
+  margin-top: 10px;
+}
+
+.m-top-50{
+  margin-top: 50px;
+}

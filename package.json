@@ -1,19 +1,27 @@
 {
   "name": "nuxt-project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Nuxt.js project",
+  "author": "zewei <543347844@qq.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liuzewei1990/nuxt-project.git"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^3.3.7",
+    "nuxt": "^1.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/liuzewei1990/nuxt-project/issues"
-  },
-  "homepage": "https://github.com/liuzewei1990/nuxt-project#readme"
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
 }
