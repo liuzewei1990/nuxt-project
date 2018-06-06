@@ -1,4 +1,16 @@
 module.exports = {
+  cache: {
+    max: 1000,
+    maxAge: 900000
+  },
+  // render: {
+  //   bundleRenderer: {
+  //     cache: require('lru-cache')({
+  //       max: 1000,
+  //       maxAge: 1000 * 60 * 15
+  //     })
+  //   }
+  // },
   /*
   ** Headers of the page
   */
@@ -46,5 +58,19 @@ module.exports = {
     "~assets/css/reset.css",
     "~assets/css/global.css",
     // "bootstrap/dist/css/bootstrap.min.css",
+  ],
+
+  plugins: [
+    "~plugins/http"
+  ],
+
+  proxy: [
+    [
+      '/api',
+      {
+        target: 'http://118.190.149.38:8088/converge/online/quick/pay', // api主机
+        pathRewrite: { '^/api': '/' }
+      }
+    ]
   ]
 }

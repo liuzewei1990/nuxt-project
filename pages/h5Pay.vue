@@ -1,17 +1,18 @@
 <template>
   <section class="pad-10 m-top-50">
-交易退货
+H5支付
   </section>
 </template>
 
 <script>
 
 export default {
+    // layout: "payLayout",
     components: {
     },
     head() {
         return {
-            title: "交易退货",
+            title: "H5支付",
         }
     },
 }
